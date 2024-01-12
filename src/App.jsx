@@ -1,9 +1,12 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import useFetch from './hooks/useFetch'
 import UserCard from './components/UserCard'
 import FormUser from './components/FormUser'
+
 function App() {
+
+  const [userUpdate, setUserUpdate] = useState()
 
   const baseUrl = 'https://users-crud.academlo.tech'
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useFetch(baseUrl)
@@ -12,11 +15,15 @@ function App() {
     getUsers()
   }, [])
 
+  console.log(users)
   return (
     <div>
       <h1>User CRUD</h1>
       <FormUser 
         createUser={createUser}
+        userUpdate={userUpdate}
+        updateUser={updateUser}
+        setUserUpdate={setUserUpdate}
       />
 
       <div>
@@ -25,6 +32,9 @@ function App() {
             <UserCard 
               key={user.id}
               user={user}
+              deleteUser={deleteUser}
+              setUserUpdate={setUserUpdate}
+            
             />
           ))
         }

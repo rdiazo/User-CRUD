@@ -15,6 +15,7 @@ const useFetch = (baseUrl) => {
     }
 
     // CREATE
+
     const createApi = (data) => {
         const url = `${baseUrl}/users/`
         axios.post(url, data)
@@ -38,6 +39,7 @@ const useFetch = (baseUrl) => {
     }
 
     // UPDATE
+    
  const updateApi = () => {
             const url = `${baseUrl}/users/{id/}`
             axios.put(url, data)
