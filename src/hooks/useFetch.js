@@ -29,19 +29,19 @@ const useFetch = (baseUrl) => {
     // DELETE
 
     const deleteApi = (id) => {
-        const url = `${baseUrl}/users/{id/}`
+        const url = `${baseUrl}/users/${id}/`
         axios.delete(url)
         .then(res => {
             console.log(res.data)
             setResponse(response.filter(user => user.id !== id))
         })
         .catch(err => console.log(err))
-    }
+    }                                                                                                                                                                                                                           
 
     // UPDATE
-    
- const updateApi = () => {
-            const url = `${baseUrl}/users/{id/}`
+
+ const updateApi = (id, data) => {
+            const url = `${baseUrl}/users/${id}/`
             axios.put(url, data)
             .then(res => {
                 console.log(res.data)
