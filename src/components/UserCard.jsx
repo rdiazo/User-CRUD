@@ -1,5 +1,5 @@
 
-const UserCard = ({ user, deleteUser, setUserUpdate }) => {
+const UserCard = ({ user, deleteUser, setUserUpdate, setIsFormClose }) => {
 
     const handleDelete = () => {
         deleteUser(user.id)
@@ -7,6 +7,7 @@ const UserCard = ({ user, deleteUser, setUserUpdate }) => {
 
     const   handleEdit = () => {
         setUserUpdate(user)
+        setIsFormClose(false)
     }
 
   return (
