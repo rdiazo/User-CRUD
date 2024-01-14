@@ -1,15 +1,7 @@
-.form__container {
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #0003;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 200ms ease transform;
+label {
+    display: block;
 }
-.form__close {
-    transform: scale(0);
+
+imput, label {
+    font-size: 1.3em;
 }
