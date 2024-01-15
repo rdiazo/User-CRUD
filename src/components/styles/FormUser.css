@@ -6,18 +6,16 @@
     border-radius: 0.8em;
     position: relative;
 }
-
 .form__x {
     position: absolute;
     top: 0.7em;
-    left: 1em;
-    right: 2em;
+    right: 1.2em;
     cursor: pointer;
     font-size: 1.2rem;
 }
 .form__x:hover {
-    transform: scale(1.2);
-    color: red;
+    transform: scale(1.4);
+    color: rgb(180, 7, 7);
 }
 
 .form__title {
@@ -34,15 +32,15 @@
     margin-bottom: 1em;
 }
 
-.for__field__name {
+.form__field__name {
     font-size: 0.9rem;
     font-weight: 300;
     padding-left: 1.5em;
 }
 
 .form__field {
-    padding: 0.4em 1em;
-    background-color: rgb(244, 244, 244);
+    padding: 0.3em 1em;
+    background-color: rgb(221, 213, 213);
     border: 1px solid #aaa5;
     font-weight: 300;
     color: #555;
@@ -61,6 +59,12 @@
 }
 
 .form__btn:hover {
-    /* filter: brightness(1.2);*/
-    filter: grayscale(80%);
+    filter: brightness(1.2);
+
 }
+
+::placeholder {
+    color: rgb(10, 10, 146);
+    font-size: inherit;
+    font-style: italic;
+  }
