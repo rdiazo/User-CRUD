@@ -4,9 +4,10 @@
 }
 html {
   font-family: 'Nunito Sans', sans-serif;
+  background-color: rgb(228, 228, 228);  
 }
 body {
-  margin: 0;
+  margin: 10px;
 }
 h1, h2, h3, p, ul, hr {
   margin-top: 0;

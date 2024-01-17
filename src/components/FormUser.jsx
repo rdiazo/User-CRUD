@@ -26,6 +26,7 @@ const FormUser = ({ createUser, userUpdate, updateUser, setUserUpdate, setIsForm
             last_name: '',
             birthday: ''
         })
+        setIsFormClose(true)
     }
 
 const handleExit = () => {
@@ -50,15 +51,15 @@ const handleExit = () => {
             </label>
             <label className="form__label" >
                 <span className="form__field__name" >Password</span>
-                <input className="form__field" {...register('password')} type="password" />
+                <input className="form__field" {...register('password')} type="password" placeholder="password" />
             </label>
             <label className="form__label" >
                 <span className="form__field__name" >First name</span>
-                <input className="form__field" {...register('first_name')} type="text" />
+                <input className="form__field" {...register('first_name')} type="text" placeholder="First name"/>
             </label>
             <label className="form__label" >
                 <span className="form__field__name" >Last name</span>
-                <input className="form__field" {...register('last_name')} type="text" />
+                <input className="form__field" {...register('last_name')} type="text" placeholder="Last name"/>
             </label>
             <label className="form__label" >
                 <span className="form__field__name" >Birthday</span>
